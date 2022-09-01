@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400;1,700&family=Oswald:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #F4F4F4;
+    min-height: 100vh;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---- top nav bar ---- */
+
+.top-bar {
+    width: 100%;
+    top: 0;
+    height: 65px;
+    background-color: #F8F8F8;
+}
+
+.nav-bar {
+    width: 79.3%;
+    height: 65px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar a {
+    color: #444444;
+}
+
+.navbar ul {
+    position: relative;
+}
+
+.nav-bar ul li {
+    position: relative;
+    display: inline-block;
+}
+
+.links li {
+    padding-right: 26px;
+}
+
+.links a {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.social a {
+    font-size: 14px;
+}
+
+.search {
+    padding-left: 20px;
+}
+
+.social li:not(.search) {
+    padding-left: 11px;
+}
+
+/* ---- end top nav bar ---- */
+
+.core {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-bar {
+
+}
