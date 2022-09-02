@@ -31,7 +31,7 @@ a {
     width: 100%;
     top: 0;
     height: 65px;
-    background-color: #F8F8F8;
+    background-color: #FFFFFF;
     border-bottom: 1px solid #E7E7E7;
 }
 
@@ -67,6 +67,7 @@ a {
     font-weight: 700;
     font-size: 12px;
     text-transform: uppercase;
+    letter-spacing: 0.4px;
 }
 
 .social a {
@@ -86,7 +87,7 @@ a {
 .core {
     width: 79.3%;
     min-height: 100vh;
-    margin: 52px auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 
@@ -102,7 +103,114 @@ a {
     background-color: #F4F4F4;
 }
 
+/* ---- main article ---- */
+
 .main-article {
     width: 100%;
     border: 1px solid #E7E7E7;
+    background-color: #FFFFFF;
+    margin-top: 53px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-article-img {
+    width: 100%;
+    height: 496px;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+
+.main-article h3 {
+    padding-top: 500px;
+    margin-top: 43px;
+    position: relative;
+    text-align: center;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #CB6140;
+    letter-spacing: 0.6px;
+}
+
+.main-article h1 {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.main-article p {
+    padding: 14px 40px;
+    position: relative;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.main-article button {
+    position: relative;
+    text-align: center;
+    color: #CB6140;
+    border: 1px solid #CB6140;
+    background-color: #FFFFFF;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    padding: 12px 18px;
+    margin: 7px 0;
+}
+
+.article-footer {
+    position: relative;
+    margin-top: 34px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 40px 33px 40px;
+    color: #444444;
+}
+
+.article-footer a {
+    color: #444444;  
+}
+
+.article-footer:before {
+    content: " ";
+    position: absolute;
+    width: 90%;
+    top: 0;
+    left: 40px;
+    border-top: 1px solid #E7E7E7;
+}
+
+.article-footer ul {
+    position: relative;
+}
+
+.article-footer ul li {
+    display: inline-block;
+}
+
+.article-footer .author, .article-footer .author-name {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.article-footer .social-links li {
+    padding-left: 14px;
 }
