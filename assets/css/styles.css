@@ -45,10 +45,6 @@ a {
     align-items: center;
 }
 
-.nav-bar a {
-    color: #444444;
-}
-
 .navbar ul {
     position: relative;
 }
@@ -68,10 +64,12 @@ a {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.4px;
+    color: #444444;
 }
 
 .social a {
     font-size: 14px;
+    color: #C0C0C0;
 }
 
 .search {
@@ -156,6 +154,18 @@ a {
     line-height: 26px;
 }
 
+/* ---- larger image ---- */
+
+.main-article:nth-child(3) .main-article-img {
+    height: 524px;
+}
+
+.main-article:nth-child(3) h3 {
+    margin-top: 70px;
+}
+
+/* ---- end larger image ---- */
+
 .main-article button {
     position: relative;
     text-align: center;
@@ -179,11 +189,11 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 8px 40px 33px 40px;
-    color: #444444;
+    color: #C0C0C0;
 }
 
 .article-footer a {
-    color: #444444;  
+    color: #C0C0C0;  
 }
 
 .article-footer:before {
@@ -192,7 +202,7 @@ a {
     width: 90%;
     top: 0;
     left: 40px;
-    border-top: 1px solid #E7E7E7;
+    border-top: 1px solid #C0C0C0;
 }
 
 .article-footer ul {
@@ -213,4 +223,84 @@ a {
 
 .article-footer .social-links li {
     padding-left: 14px;
+}
+
+/* ---- end main article ---- */
+
+/* ---- sidebar id ---- */
+
+.sidebar-id {
+    background-color: #FFFFFF;
+    margin-top: 53px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.sidebar-id .id-background {
+    width: 100%;
+    height: 192px;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+}
+
+.sidebar-id .id-profile {
+    width: 205px;
+    height: 205px;
+    margin-top: 106px;
+    border: 8px solid #FFFFFF;
+    border-radius: 50%;
+    z-index: 20;
+    object-fit: cover;
+}
+
+.sidebar-id h2 {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-top: 6px;
+}
+
+.sidebar-id p {
+    padding: 0 34px;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.sidebar-id ul {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+    padding: 0 20px 50px 20px;
+}
+
+.sidebar-id ul li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 0 3px;
+    padding: 4px;
+    height: 30px;
+    width: 30px;
+    transform: translateX(-25%);
+    border: 1px solid #E7E7E7;
+    border-radius: 50%;
+}
+
+.sidebar-id ul li a {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    font-size: 12px;
+    color: #C0C0C0;
 }
