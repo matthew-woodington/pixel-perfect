@@ -338,14 +338,14 @@ a {
     object-fit: cover;
 }
 
-.sidebar-popular .post-title {
+.sidebar-popular h4 {
     font-family: "Oswald", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-
-    margin-top: 12px;
+    margin: 12px 0 15px 0;
+    color: #444444;
 }
 
 .sidebar-popular .post-date {
@@ -354,13 +354,83 @@ a {
     font-style: italic;
     font-size: 14px;
     letter-spacing: 0.3px;
+    color: #C0C0C0;
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid #E7E7E7;
 }
 
-#last-post {
+.sidebar-popular #last-post {
     border: 0;
     padding-bottom: 20px;
 }
 
+/* ---- end sidebar popular ---- */
+
+/* ---- sidebar latest posts ---- */
+
+.latest-posts {
+    width: 100%;
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7;
+}
+
+.posts-container {
+    width: 84%;
+    margin: auto;
+}
+
+.latest-posts h2 {
+    padding: 16px 0 14px 0;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+.individual-post {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid #E7E7E7;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.individual-post img {
+    height: 80px;
+    width: 108px;
+    object-fit: cover;
+}
+
+.individual-post .post-description {
+    margin-left: 15px;
+}
+
+.individual-post .post-description h4 {
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin: 4px 0 0 0;
+}
+
+.individual-post .post-description p {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #444444;
+    margin-top: 10px;
+}
+
+.posts-container #last-post {
+    border: 0;
+    margin-bottom: 18px;
+}
