@@ -144,6 +144,7 @@ a {
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
+    color: #444444;
 }
 
 .main-article p {
@@ -152,6 +153,7 @@ a {
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
     line-height: 26px;
+    color: #444444;
 }
 
 /* ---- larger image ---- */
@@ -434,3 +436,40 @@ a {
     border: 0;
     margin-bottom: 18px;
 }
+
+/* ---- sidebar instagram posts ---- */
+
+.instagram-feed {
+    width: 100%;
+    margin-top: 40px;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7;
+}
+
+.instagram-feed h2 {
+    padding: 16px 0 14px 0;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+.image-container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.instagram-feed img {
+    width: 152px;
+    height: 154px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* ---- sidebar instagram posts ---- */
