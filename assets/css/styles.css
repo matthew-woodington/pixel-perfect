@@ -80,6 +80,10 @@ a {
     padding-left: 11px;
 }
 
+.nav-bar ul li a:hover {
+    color: #CB6140;
+}
+
 /* ---- end top nav bar ---- */
 
 .core {
@@ -144,7 +148,14 @@ a {
     font-size: 25px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
+}
+
+.main-article h1 a {
     color: #444444;
+}
+
+.main-article h1 a:hover {
+    color: #CB6140;
 }
 
 .main-article p {
@@ -183,6 +194,12 @@ a {
     margin: 7px 0;
 }
 
+.main-article button:hover {
+    color: #FFFFFF;
+    background-color: #CB6140;
+    cursor: pointer;
+}
+
 .article-footer {
     position: relative;
     margin-top: 34px;
@@ -198,13 +215,17 @@ a {
     color: #C0C0C0;  
 }
 
+.article-footer a:hover {
+    color: #CB6140;
+}
+
 .article-footer:before {
     content: " ";
     position: absolute;
     width: 90%;
     top: 0;
     left: 40px;
-    border-top: 1px solid #C0C0C0;
+    border-top: 1px solid #E7E7E7;
 }
 
 .article-footer ul {
@@ -221,6 +242,7 @@ a {
     font-style: italic;
     font-size: 14px;
     letter-spacing: 0.5px;
+    color: #444444;
 }
 
 .article-footer .social-links li {
@@ -254,19 +276,29 @@ a {
     display: inline-block;
     width: 100%;
     height: 100%;
-    margin-top: 6px;
+    padding-top: 8px;
     color: #444444;
     text-align: center;
 }
 
+.page-links #current-page a {
+    color: #FFFFFF;
+    background-color: #CB6140;
+}
+
 .page-links li .fa-solid {
     font-size: 12px;
-    margin-top: 12px;
+    padding-top: 13px;
 }
 
 .page-links li .page-number {
     font-family: "Oswald", Arial, Helvetica, sans-serif;
     font-weight: 400;
+}
+
+.page-links li a:hover {
+    background-color: #CB6140;
+    color: #FFFFFF;
 }
 
 /* ---- end page nav ---- */
@@ -308,46 +340,53 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.6px;
     margin-top: 6px;
+    color: #444444;
 }
 
 .sidebar-id p {
-    padding: 0 34px;
+    padding: 0 32px;
     margin-top: 10px;
     text-align: center;
     position: relative;
     font-family: "Lato", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    line-height: 26px;
+    line-height: 25px;
+    color: #444444;
 }
 
 .sidebar-id ul {
     position: relative;
     width: 100%;
     text-align: center;
-    margin-top: 8px;
+    margin: 8px 0 20px 0;
     padding: 0 20px 32px 20px;
 }
 
 .sidebar-id ul li {
     display: inline-block;
     position: relative;
-    text-align: center;
-    vertical-align: bottom;
     margin: 0 3px;
     padding: 4px;
     height: 30px;
     width: 30px;
     transform: translateX(-25%);
-    border: 1px solid #E7E7E7;
-    border-radius: 50%;
 }
 
 .sidebar-id ul li a {
     position: relative;
-    height: 20px;
-    width: 20px;
-    font-size: 12px;
+    display: inline-block;
+    font-size: 14px;
     color: #C0C0C0;
+    height: 30px;
+    width: 30px;
+    padding-top: 8px;
+    border: 1px solid #E7E7E7;
+    border-radius: 50%;
+}
+
+.sidebar-id ul a:hover {
+    background-color: #CB6140;
+    color: #FFFFFF;
 }
 
 /* ---- end sidebar id ---- */
@@ -376,10 +415,36 @@ a {
     text-align: center;
 }
 
-.sidebar-popular img {
+.sidebar-popular .image-wrapper {
     width: 100%;
     height: 210px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sidebar-popular .image-wrapper .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(190, 103, 72, 0.6);
+}
+
+.sidebar-popular img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: center;
+}
+
+.sidebar-popular .image-wrapper img, .sidebar-popular .image-wrapper .overlay {
+    transition: 200ms ease-in-out;
+}
+
+.sidebar-popular .image-wrapper .overlay {
+    opacity: 0;
+}
+
+.sidebar-popular .image-wrapper .overlay:hover {
+    opacity: 1;
 }
 
 .sidebar-popular h4 {
@@ -388,7 +453,7 @@ a {
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    margin: 12px 0 15px 0;
+    margin: 16px 0 15px 0;
     color: #444444;
 }
 
@@ -445,10 +510,36 @@ a {
     margin-bottom: 16px;
 }
 
-.individual-post img {
+.individual-post .image-wrapper {
     height: 80px;
     width: 108px;
+    position: relative;
+    overflow: hidden;
+}
+
+.individual-post img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    object-position: center;
+}
+
+.individual-post .image-wrapper .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(190, 103, 72, 0.6);
+}
+
+.individual-post .image-wrapper img, .individual-post .image-wrapper .overlay {
+    transition: 200ms ease-in-out;
+}
+
+.individual-post .image-wrapper .overlay {
+    opacity: 0;
+}
+
+.individual-post .image-wrapper .overlay:hover {
+    opacity: 1;
 }
 
 .individual-post .post-description {
@@ -507,11 +598,50 @@ a {
     flex-wrap: wrap;
 }
 
-.instagram-feed img {
+.image-container .image-wrapper {
     width: 152px;
     height: 154px;
-    object-fit: cover;
+    position: relative;
     margin-bottom: 10px;
+}
+
+.image-container .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.image-container .image-wrapper .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(190, 103, 72, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.image-container .image-wrapper .overlay p {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 3px;
+}
+
+.image-container .image-wrapper img, .image-container .image-wrapper .overlay {
+    transition: 200ms ease-in-out;
+}
+
+.image-container .image-wrapper .overlay {
+    opacity: 0;
+}
+
+.image-container .image-wrapper .overlay:hover {
+    opacity: 1;
+}
+
+.individual-post .post-description {
+    margin-left: 15px;
 }
 
 /* ---- end sidebar instagram posts ---- */
@@ -544,11 +674,52 @@ a {
     justify-content: space-evenly;
     align-content: center;
 }
-
-.footer-images img {
+.footer-images a {
     width: 12.5%;
     height: 100%;
-    object-fit: cover;
 }
+
+.footer-images .image-wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+}
+
+.footer-images .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.footer-images .image-wrapper .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(190, 103, 72, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.footer-images .image-wrapper .overlay p {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding: 3px;
+}
+
+.footer-images .image-wrapper img, .image-container .image-wrapper .overlay {
+    transition: 200ms ease-in-out;
+}
+
+.footer-images .image-wrapper .overlay {
+    opacity: 0;
+}
+
+.footer-images .image-wrapper .overlay:hover {
+    opacity: 1;
+}
+
 
 /* ---- end footer ---- */

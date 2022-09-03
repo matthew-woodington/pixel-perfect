@@ -38,7 +38,7 @@
             <article class="main-article">
                 <img src="../pixel-perfect/assets/images/city-img.jpg" alt="" class="main-article-img">
                 <h3 class="article-category">Travel</h3>
-                <h1 class="main-article-title">Adventure to the city</h1>
+                <h1 class="main-article-title"><a href="#">Adventure to the city</a></h1>
                 <p class="main-article-preview">Lorem ipsum dolor sit amet, consete tur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
                     labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
                     et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
@@ -61,7 +61,7 @@
             <article class="main-article">
                 <img src="../pixel-perfect/assets/images/sea-life.jpg" alt="" class="main-article-img">
                 <h3 class="article-category">Travel</h3>
-                <h1 class="main-article-title">Searching for Amy</h1>
+                <h1 class="main-article-title"><a href="#">Searching for Amy</a></h1>
                 <p class="main-article-preview">Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor
                     sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
                     magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
@@ -84,7 +84,7 @@
             <article class="main-article">
                 <img src="../pixel-perfect/assets/images/tropical-bird.jpg" alt="" class="main-article-img">
                 <h3 class="article-category">Travel</h3>
-                <h1 class="main-article-title">The Rasin at the End of the Hot Dog</h1>
+                <h1 class="main-article-title"><a href="#">The Rasin at the End of the Hot Dog</a></h1>
                 <p class="main-article-preview">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Sed diam nonumy
                     eirmod tempor invidunt ut labore et dolore magna aliquyam erat, Lorem ipsum dolor sit amet,
                     consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -107,7 +107,7 @@
             <article class="main-article">
                 <img src="../pixel-perfect/assets/images/fireworks.jpg" alt="" class="main-article-img">
                 <h3 class="article-category">Travel</h3>
-                <h1 class="main-article-title">America the Beautiful</h1>
+                <h1 class="main-article-title"><a href="#">America the Beautiful</a></h1>
                 <p class="main-article-preview">Magna aliquyam erat, Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
                     amet. Sed diam nonumy eirmod tempor invidunt ut labore et dolore. Lorem ipsum dolor sit amet,
                     consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -128,7 +128,7 @@
             <!-- end main-article 4 -->
             <article class="page-navigation">
                 <ul class="page-links">
-                    <li><a href="#" class="page-number one">1</a></li>
+                    <li id="current-page"><a href="#" class="page-number one">1</a></li>
                     <li><a href="#" class="page-number two">2</a></li>
                     <li><a href="#" class="page-number three">3</a></li>
                     <li><a href="#" class="page-number four">4</a></li>
@@ -162,17 +162,32 @@
                 <h2>Popular Posts</h2>
                 <ul>
                     <li class="popular-post">
-                        <img src="../pixel-perfect/assets/images/ice-cream.jpg" alt="">
+                        <a href="">
+                            <div class="image-wrapper">
+                                <img src="../pixel-perfect/assets/images/ice-cream.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                         <h4>Homemade Ice-Cream</h4>
                         <p class="post-date">February 15, 2021</p>
                     </li>
                     <li class="popular-post">
-                        <img src="../pixel-perfect/assets/images/llama.jpg" alt="">
+                        <a href="">
+                            <div class="image-wrapper">
+                                <img src="../pixel-perfect/assets/images/llama.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                         <h4>Llama Treks</h4>
                         <p class="post-date">March 15, 2021</p>
                     </li>
                     <li class="popular-post">
-                        <img src="../pixel-perfect/assets/images/pineapple.jpg" alt="">
+                        <a href="">
+                            <div class="image-wrapper">
+                                <img src="../pixel-perfect/assets/images/pineapple.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                         <h4>The Moment of Pineapple</h4>
                         <p id="last-post" class="post-date">April 15, 2021</p>
                     </li>
@@ -184,28 +199,48 @@
                 <h2>Latest Posts</h2>
                 <section class="posts-container">
                     <div class="individual-post">
-                        <img src="../pixel-perfect/assets/images/sky-dive.jpg" alt="">
+                        <a href="">
+                            <div class="image-wrapper">
+                                <img src="../pixel-perfect/assets/images/sky-dive.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>
                         <div class="post-description">
                             <h4>An Army Dive From Sky</h4>
                             <p>May 27, 2017</p>
                         </div>
                     </div>
                     <div class="individual-post">
-                        <img src="../pixel-perfect/assets/images/beach.jpg" alt="">
+                        <a href="">
+                            <div class="image-wrapper">
+                                <img src="../pixel-perfect/assets/images/beach.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>                        
                         <div class="post-description">
                             <h4>Beach Bum</h4>
                             <p>April 27, 2017</p>
                         </div>
                     </div>
                     <div class="individual-post">
-                        <img src="../pixel-perfect/assets/images/travel.jpg" alt="">
+                        <a href="">
+                            <div class="image-wrapper">
+                                <img src="../pixel-perfect/assets/images/travel.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>                        
                         <div class="post-description">
                             <h4>Ticket For One</h4>
                             <p>April 20, 2017</p>
                         </div>
                     </div>
                     <div id="last-post" class="individual-post">
-                        <img src="../pixel-perfect/assets/images/paint.jpg" alt="">
+                        <a href="">
+                            <div class="image-wrapper">
+                                <img src="../pixel-perfect/assets/images/paint.jpg" alt="">
+                                <div class="overlay"></div>
+                            </div>
+                        </a>                        
                         <div class="post-description">
                             <h4>Gather Your Paints</h4>
                             <p>May 27, 2017</p>
@@ -217,12 +252,42 @@
             <article class="instagram-feed">
                 <h2>Instagram feed</h2>
                 <div class="image-container">
-                    <img src="../pixel-perfect/assets/images/city-post.jpg" alt="">
-                    <img src="../pixel-perfect/assets/images/dog.jpg" alt="">
-                    <img src="../pixel-perfect/assets/images/plateau.jpg" alt="">
-                    <img src="../pixel-perfect/assets/images/travel-ocean.jpg" alt="">
-                    <img src="../pixel-perfect/assets/images/street.jpg" alt="">
-                    <img src="../pixel-perfect/assets/images/tour-car.jpg" alt="">
+                    <a href="">
+                        <div class="image-wrapper">
+                            <img src="../pixel-perfect/assets/images/city-post.jpg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="image-wrapper">
+                            <img src="../pixel-perfect/assets/images/dog.jpg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="image-wrapper">
+                            <img src="../pixel-perfect/assets/images/plateau.jpg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="image-wrapper">
+                            <img src="../pixel-perfect/assets/images/travel-ocean.jpg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="image-wrapper">
+                            <img src="../pixel-perfect/assets/images/street.jpg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="image-wrapper">
+                            <img src="../pixel-perfect/assets/images/tour-car.jpg" alt="">
+                            <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                        </div>
+                    </a>
                 </div>
             </article>
         </section>
@@ -233,14 +298,54 @@
     <footer class="footer">
         <h2>Follow@ Instagram</h2>
         <div class="footer-images">
-            <img src="../pixel-perfect/assets/images/city-post.jpg" alt="">
-            <img src="../pixel-perfect/assets/images/dog.jpg" alt="">
-            <img src="../pixel-perfect/assets/images/plateau.jpg" alt="">
-            <img src="../pixel-perfect/assets/images/travel-ocean.jpg" alt="">
-            <img src="../pixel-perfect/assets/images/street.jpg" alt="">
-            <img src="../pixel-perfect/assets/images/tour-car.jpg" alt="">
-            <img src="../pixel-perfect/assets/images/city-snow.jpg" alt="">
-            <img src="../pixel-perfect/assets/images/ship.jpg" alt="">
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="../pixel-perfect/assets/images/city-post.jpg" alt="">
+                    <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="../pixel-perfect/assets/images/dog.jpg" alt="">
+                    <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="../pixel-perfect/assets/images/plateau.jpg" alt="">
+                    <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="../pixel-perfect/assets/images/travel-ocean.jpg" alt="">
+                    <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="../pixel-perfect/assets/images/street.jpg" alt="">
+                    <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="../pixel-perfect/assets/images/tour-car.jpg" alt="">
+                    <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="../pixel-perfect/assets/images/city-snow.jpg" alt="">
+                    <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="image-wrapper">
+                    <img src="../pixel-perfect/assets/images/ship.jpg" alt="">
+                    <div class="overlay"><i class="fa-regular fa-heart"></i><p>325</p><i class="fa-regular fa-comment"></i><p>20</p></div>
+                </div>
+            </a>
         </div>
     </footer>
 </body>
