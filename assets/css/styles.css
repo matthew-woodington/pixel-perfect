@@ -84,6 +84,10 @@ a {
     color: #CB6140;
 }
 
+.nav-bar .mobile-dropdown {
+    display: none;
+}
+
 /* ---- end top nav bar ---- */
 
 .core {
@@ -665,6 +669,15 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.6px;
     text-align: center;
+    color: #444444;
+}
+
+.footer h2 a {
+    color: #444444;
+}
+
+.footer h2 a:hover {
+    color: #CB6140;
 }
 
 .footer-images {
@@ -721,5 +734,130 @@ a {
     opacity: 1;
 }
 
-
 /* ---- end footer ---- */
+
+@media (max-width: 768px) {
+
+    .core {
+        width: 94%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-bar {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    /* ---- nav bar ---- */
+
+    .nav-bar ul {
+        display: none;
+    }
+
+    .top-bar {
+        height: 56px;
+    }
+
+    .nav-bar {
+        height: 100%;
+        width: 85%;
+        position: relative;
+    }
+
+    .nav-bar .mobile-dropdown {
+        display: inline-block;
+        margin-left: 94%;
+    }
+
+    .nav-bar .mobile-dropdown i {
+        font-size: 25px;
+    }
+
+    /* ---- end nav bar ---- */
+
+    /* ---- main ---- */
+
+    .main-article {
+        margin-top: 50px;
+    }
+
+    .main-article img {
+        height: 312px;
+    }
+
+    .main-article h3 {
+        padding-top: 316px;
+    }
+
+    .main-article h1 {
+        font-size: 22px;
+    }
+
+    .main-article p {
+        /* overflow: hidden;
+        height: 225px;
+        margin-bottom: 26px; */
+        padding: 14px 36px;
+    }
+
+    .main-article:nth-child(3) .main-article-img {
+        height: 332px;
+    }
+
+    .page-navigation {
+        margin-bottom: 50px;
+    }
+
+    /* ---- end main ---- */
+    
+    /* ---- side bar ---- */
+
+    .sidebar-id {
+        margin-top: 0;
+    }
+
+    .sidebar-popular ul {
+        width: 88%;
+    }
+
+    .sidebar-popular .image-wrapper {
+        height: 288px;
+    }
+
+    .latest-posts .posts-container {
+        width: 88%;
+    }
+
+    .instagram-feed .image-container {
+        width: 92%;
+    }
+
+    .instagram-feed .image-container .image-wrapper {
+        width: 208px;
+        height: 210px;
+        margin-bottom: 20px;
+    }
+
+    .instagram-feed {
+        margin-bottom: 75px;
+    }
+
+    /* ---- footer ---- */
+
+    .footer-images {
+        height: 132px;
+    }
+
+    .footer-images a:nth-child(n+5) {
+        display: none;
+    }
+
+    .footer-images a {
+        width: 25%;
+    }
+}
