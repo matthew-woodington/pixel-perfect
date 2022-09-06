@@ -25,6 +25,10 @@ a {
     text-decoration: none;
 }
 
+.fa-comment {
+    padding-left: 12px;
+}
+
 /* ---- top nav bar ---- */
 
 .top-bar {
