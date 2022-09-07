@@ -88,19 +88,24 @@ a {
     color: #CB6140;
 }
 
-.nav-bar .mobile-dropdown {
+.mobile-dropdown {
     display: none;
+    cursor: pointer;
 }
 
-.nav-bar .mobile-dropdown i {
-    color: #444444;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 3.0s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #444444;
 }
 
-.nav-bar .mobile-dropdown i:hover {
-    color: #CB6140;
+.mobile-dropdown:hover > .bar {
+    background-color: #CB6140;
 }
-
-/* ---- end top nav bar ---- */
 
 .core {
     width: 79.3%;
@@ -767,12 +772,19 @@ a {
 
     /* ---- nav bar ---- */
 
-    .nav-bar ul {
+    .nav-bar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-bar .social {
         display: none;
     }
 
     .top-bar {
         height: 56px;
+        z-index: 60;
+        position: fixed;
     }
 
     .nav-bar {
@@ -781,13 +793,46 @@ a {
         position: relative;
     }
 
-    .nav-bar .mobile-dropdown {
-        display: inline-block;
-        margin-left: 94%;
+    .mobile-dropdown {
+        display: block;
+        margin-left: 100%;
     }
 
-    .nav-bar .mobile-dropdown i {
-        font-size: 25px;
+    .mobile-dropdown.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-dropdown.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .mobile-dropdown.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);    
+    }
+
+    .nav-bar .links {
+        position: fixed;
+        top: -100%;
+        margin: 0;
+        display: block;
+        background-color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 50;
+    }
+
+    .nav-bar .links li {
+        margin: 50px 0;
+        display: block;
+    }
+
+    .nav-bar .links a {
+        font-size: 20px;
+    }
+
+    .links.active {
+        top: 56px;
     }
 
     /* ---- end nav bar ---- */
@@ -795,7 +840,7 @@ a {
     /* ---- main ---- */
 
     .main-article {
-        margin-top: 50px;
+        margin-top: 106px;
     }
 
     .main-article img {
