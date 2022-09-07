@@ -770,73 +770,6 @@ a {
         width: 100%;
     }
 
-    /* ---- nav bar ---- */
-
-    .nav-bar {
-        width: 100%;
-        margin: 0;
-    }
-
-    .nav-bar .social {
-        display: none;
-    }
-
-    .top-bar {
-        height: 56px;
-        z-index: 60;
-        position: fixed;
-    }
-
-    .nav-bar {
-        height: 100%;
-        width: 85%;
-        position: relative;
-    }
-
-    .mobile-dropdown {
-        display: block;
-        margin-left: 100%;
-    }
-
-    .mobile-dropdown.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .mobile-dropdown.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .mobile-dropdown.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);    
-    }
-
-    .nav-bar .links {
-        position: fixed;
-        top: -100%;
-        margin: 0;
-        display: block;
-        background-color: #FFFFFF;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-        z-index: 50;
-    }
-
-    .nav-bar .links li {
-        margin: 50px 0;
-        display: block;
-    }
-
-    .nav-bar .links a {
-        font-size: 20px;
-    }
-
-    .links.active {
-        top: 56px;
-    }
-
-    /* ---- end nav bar ---- */
-
     /* ---- main ---- */
 
     .main-article {
@@ -933,6 +866,72 @@ a {
 
     .footer-images a {
         width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .nav-bar .social {
+        display: none;
+    }
+
+    .top-bar {
+        height: 56px;
+        z-index: 60;
+        position: fixed;
+    }
+
+    .nav-bar {
+        height: 100%;
+        width: 85%;
+        position: relative;
+    }
+
+    .mobile-dropdown {
+        display: block;
+        margin-left: 100%;
+    }
+
+    .mobile-dropdown.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .mobile-dropdown.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .mobile-dropdown.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);    
+    }
+
+    .nav-bar .links {
+        position: fixed;
+        top: -100%;
+        margin: 0;
+        display: block;
+        background-color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 50;
+    }
+
+    .nav-bar .links li {
+        margin: 50px 0;
+        display: block;
+        padding: 0;
+    }
+
+    .nav-bar .links a {
+        font-size: 20px;
+    }
+
+    .links.active {
+        top: 56px;
     }
 }
 
